@@ -87,12 +87,10 @@ bool check(vector<int> pin){
     for(int i=0; i<pin.size();i=i+2){
 
         if(coords[pin[i]]->y==coords[pin[i+1]]->y ){
-                 if(pin[i]<pin[i+1]){
-                     if(search(pin[i],pin)){
+            if(search(pin[i],pin)){
                         count_sol++;
                         return  true;
                      }
-                 }
 
          }
 
